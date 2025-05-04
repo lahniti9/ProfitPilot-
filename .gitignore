@@ -1,0 +1,135 @@
+# ===============================================
+# Flutter/Dart Specific
+# ===============================================
+
+# Flutter generated files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.pubspec.lock
+.buildlog/
+.metadata
+
+# Build directories
+**/build/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/**/gradle-wrapper.jar
+**/android/gradlew
+**/android/gradlew.bat
+**/android/**/GeneratedPluginRegistrant.java
+
+# iOS
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ===============================================
+# IDE Specific
+# ===============================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ===============================================
+# Platform Specific
+# ===============================================
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Linux
+.directory
+*~
+
+# ===============================================
+# Language/Environment Specific
+# ===============================================
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.swp
+
+# ===============================================
+# Miscellaneous
+# ===============================================
+
+# Debug symbols
+app.*.symbols
+app.*.map.json
+
+# VS Code Migrations
+migrate_working_dir/
+
+# Subversion
+.svn/
+
+# Swift Package Manager
+.swiftpm/
+
+# Temp files
+*.tmp
+*.bak
