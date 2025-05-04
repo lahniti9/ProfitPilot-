@@ -190,12 +190,34 @@ class _HistoryScreenState extends State<HistoryScreen> {
               child: const Icon(Icons.delete, color: Colors.red),
             ),
             confirmDismiss: (direction) async {
-              try {
-                await deleteItem(index);
-                return true; // Only confirm if deletion succeeds
-              } catch (e) {
-                return false; // Don't dismiss if there's an error
+              if (direction == DismissDirection.endToStart) {
+                final shouldDelete = await showDialog<bool>(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    title: const Text('Delete Item'),
+                    content:
+                        Text('Delete calculation from ${item['timestamp']}?'),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, false),
+                        child: const Text('Cancel'),
+                      ),
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, true),
+                        child: const Text('Delete',
+                            style: TextStyle(color: Colors.red)),
+                      ),
+                    ],
+                  ),
+                );
+
+                if (shouldDelete == true) {
+                  await deleteItem(index);
+                  return true;
+                }
+                return false;
               }
+              return false;
             },
             child: Container(
               margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
